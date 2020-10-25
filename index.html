@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Young and inspiring web developer/designer." />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio | Aleksandar Lukaroski</title>
+</head>
+<body>
+        <header class="main-head">
+            <nav>
+                <h1 id="logo">Aleksandar Lukaroski</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-section" id="about">
+                <div class="container">
+                    <span class="watermark wm1">Portfolio</span>
+                    <div class="hero-content">
+                        <h3>Hello, i'm</h3>
+                        <h1>Aleksandar Lukaroski</h1>
+                        <h2>Web developer/designer</h2>
+                        <p>I'm currently at my 3th year of my university studies in Computer Science. My favourite thing to do is designing and building responsive websites and web applications from scratch.</p>
+                        <a href="#projects" class="hero-btn1 hero-btn">Projects</a>
+                        <a href="#contact" class="hero-btn2 hero-btn">Contact me</a>
+                    </div>
+                    <div class="hero-image-part">
+                        <div class="hero-image">
+                            <img src="./images/image-of-me.jpg" alt="Image of me">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project-section" id="projects">
+                <div class="container">
+                    <span class="watermark wm2">Projects</span>
+                    <div class="project-cards">
+                        <div class="card1 card">
+                            <div class="card-img-holder">
+                                <img src="" alt="">
+                            </div>
+                            <a href="#">View Project 1</a>
+                        </div>
+                        <div class="card2 card">
+                            <div class="card-img-holder">
+                                <img src="" alt="">
+                            </div>
+                            <a href="#">View Project 2</a>
+                        </div>
+                        <div class="card3 card">
+                            <div class="card-img-holder">
+                                <img src="" alt="">
+                            </div>
+                            <a href="#">View Project 3</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills-section" id="skills">
+                <div class="container">
+                    <span class="watermark wm3">Skills</span>
+                    <div class="skills-parts">
+                        <div class="university-studies">
+                            <h1>My university studies in a nutshell<br>-programming subjects only</h1>
+                            <h2>Introduction to Computer science</h2>
+                            <p>HTML basics</p>
+                            <h2>Introduction to programming</h2>
+                            <p>C++ basics</p>
+                            <h2>Object-oriented programming</h2>
+                            <p>OOP in C++</p>
+                            <h2>Data structures and algorithms</h2>
+                            <p>Java</p>
+                            <h2>Visual programming</h2>
+                            <p>C# for desktop applications (creating forms) and console OOP</p>
+                            <h2>Data bases</h2>
+                            <p>Focus on MySQL, additional XML and C#</p>
+                            <h2>Web programming</h2>
+                            <p>Focus on PHP and MySQL, additional web tehnologies</p>
+                            <h2>Advanced algorithms</h2>
+                            <p>Java</p>
+                        </div>
+                        <div class="web-development">
+                            <h1>Web development</h1>
+                            <h2>HTML5</h2>
+                            <p>HTML5 syntacs and semantic elements</p>
+                            <h2>CSS3</h2>
+                            <p>CSS3 box model, Flexbox, Grid</p>
+                            <h2>JavaScript</h2>
+                            <p>Basics, OOP, DOM</p>
+                        </div>
+                        <div class="web-design">
+                            <h1>Web design</h1>
+                            <h2>Adobe Xd</h2>
+                            <p>Applying the design fundamentals</p>
+                            <h2>Affinity photo</h2>
+                            <p>Basic image manipulation</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section" id="contact">
+                <div class="container">
+                    <span class="watermark wm4">Contact</span>
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="message">Your message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+            <section class="footer-section">
+                <div class="container">
+                    <h3>Stip, Macedonia</h3>
+                    <p>Copywrite &copy; 2020</p>
+                </div>
+            </section>
+        </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

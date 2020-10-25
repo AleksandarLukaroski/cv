@@ -1,0 +1,685 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  color: #004c6f;
+  animation: opening 1s ease-in-out;
+  background-color: #a5ecd7;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #004c6f;
+}
+
+.watermark {
+  color: rgba(0, 76, 111, 0.15);
+  font-size: 8rem;
+  font-weight: bolder;
+  letter-spacing: 1rem;
+  display: block;
+  text-align: center;
+}
+
+/* Nav Section ---------------------------------------------------*/
+
+.main-head {
+  background-color: #a5ecd7;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: sticky;
+  top: 0rem;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+#logo {
+  flex: 1 1 20rem;
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+.nav-links a {
+  padding: 5px 15px;
+  font-size: 2rem;
+}
+
+.nav-links a:hover {
+  color: white;
+  background-color: #004c6f;
+  border-radius: 5px;
+}
+
+.burger,
+.menu-check {
+  display: none;
+}
+
+/* Hero Section -------------------------------------------------- */
+
+.hero-section .container {
+  padding: 8rem 0 5rem;
+  position: relative;
+}
+
+.wm1 {
+  font-size: 8rem;
+  position: absolute;
+  z-index: -1;
+  top: 3.5rem;
+  animation: hero-opening 4s ease-in-out;
+}
+
+.hero-content {
+  margin-bottom: 5rem;
+  animation: hero-opening 2s ease-in-out;
+}
+
+.hero-content h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+  margin-bottom: 0.3rem;
+  font-size: 4rem;
+}
+
+.hero-content h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.hero-content p {
+  margin-bottom: 2.5rem;
+  line-height: 1.3;
+  font-size: 1.5rem;
+}
+
+.hero-btn {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid #004c6f;
+}
+
+.hero-btn1 {
+  background: #004c6f;
+  color: white;
+  margin-right: 1.5rem;
+}
+
+.hero-btn1:hover,
+.hero-btn1:focus {
+  color: #004c6f;
+  background: none;
+  border: 2px solid #004c6f;
+}
+
+.hero-btn2:hover,
+.hero-btn2:focus {
+  color: white;
+  background: #004c6f;
+  border: 2px solid #004c6f;
+}
+
+.hero-image-part {
+  margin: 2rem 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 85%;
+  border-radius: 20px;
+  overflow: hidden;
+  object-fit: cover;
+  animation: hero-opening 3s ease-in-out;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Projects Section ------------------------------------------- */
+
+.project-section {
+  background: #004c6f;
+}
+
+.wm2 {
+  color: rgba(255, 255, 255, 0.15);
+  padding: 2rem 0;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 25rem;
+  background-color: #00aeff;
+  border: 2px solid #00aeff;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-img-holder {
+  height: 30rem;
+  background-color: #0073a8;
+  position: relative;
+}
+
+.card a {
+  background: #004c6f;
+  color: white;
+  margin: 0 0 0;
+  text-align: center;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  width: 100%;
+}
+
+.card a:hover {
+  background: #006492;
+}
+
+/* Skills Section -------------------------------------------------*/
+
+.skills-section {
+  padding-bottom: 3rem;
+}
+
+.wm3 {
+  padding: 2rem 0 0;
+}
+
+.skills-section h1 {
+  font-size: 3rem;
+  margin: 4rem 0 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.university-studies h1 {
+  margin-top: 1rem;
+}
+
+.skills-section h1::after {
+  content: "";
+  background-color: rgba(209, 112, 0, 0.452);
+  display: block;
+  width: 80%;
+  height: 1rem;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.skills-section p {
+  font-size: 2rem;
+}
+
+/* Contact Section --------------------------------------------------*/
+
+.contact-section {
+  background-color: #004c6f;
+  color: white;
+  padding: 0 0 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wm4 {
+  color: rgba(255, 255, 255, 0.15);
+  padding: 2rem 0 0;
+}
+
+.contact-section label {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+}
+
+.contact-section input {
+  display: block;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: #0073a8;
+  color: white;
+  font-size: 2rem;
+  width: 80%;
+}
+
+.contact-section input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #00aeff;
+}
+
+textarea {
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background-color: #0073a8;
+  color: white;
+  font-size: 2.6rem;
+  width: 80%;
+  resize: none;
+}
+
+.contact-section button {
+  display: block;
+  border: none;
+  background-color: rgb(255, 136, 0);
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-section button:hover,
+.contact-section button:focus {
+  outline: none;
+  cursor: pointer;
+  background-color: #0073a8;
+  border: 2px solid rgb(255, 136, 0);
+}
+
+/* Footer Section ------------------------------*/
+
+.footer-section {
+  background-color: #002d42;
+  color: white;
+}
+
+.footer-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section h3 {
+  margin: 2rem 0 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.footer-section p {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+/* BODY ANIMATION ------------------------------*/
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-opening {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* MEDIA QUERIES ------------------------------ */
+
+@media screen and (max-width: 450px) {
+  .hero-section .container {
+    padding: 6rem 0 3rem;
+  }
+
+  .watermark {
+    font-size: 6rem;
+  }
+
+  .wm1 {
+    top: 3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .watermark {
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .watermark {
+    font-size: 5rem;
+  }
+
+  .wm1 {
+    top: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 842px) {
+  /* BURGER ANIMATION -------------------------- */
+
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: #004c6f;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 3rem;
+  }
+
+  .nav-links {
+    background: #004c6f;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 1s ease;
+  }
+
+  .nav-open {
+    transform: translateX(-100%);
+  }
+
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: white;
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
+  }
+}
+
+/* First big media change ---------------------------------------- */
+
+@media screen and (min-width: 842px) {
+  .container {
+    width: 80%;
+  }
+
+  .watermark {
+    font-size: 9rem;
+    letter-spacing: 3rem;
+  }
+
+  /* Hero Section ------------------------- */
+
+  .hero-section .container {
+    padding: 9rem 0 5rem;
+  }
+
+  .wm1 {
+    top: 4.5rem;
+  }
+
+  .hero-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h1 {
+    margin-bottom: 0.6rem;
+    font-size: 5rem;
+  }
+
+  .hero-content h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 2rem;
+  }
+
+  .hero-image-part {
+    margin: 2rem 0 0;
+  }
+
+  /* Projects Section ------------------------- */
+
+  .wm2 {
+    padding: 2rem 0 3rem;
+  }
+
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .card {
+    margin-bottom: 4rem;
+    justify-self: center;
+  }
+
+  .card a {
+    margin: 0 0 0;
+    padding: 10px 15px;
+    font-size: 2rem;
+  }
+
+  /* Skills Section ------------------------- */
+
+  .skills-parts {
+    display: grid;
+    grid-template-areas:
+      "uni-skills uni-skills"
+      "web-dev web-des";
+  }
+
+  .university-studies {
+    grid-area: uni-skills;
+  }
+
+  .web-development {
+    grid-area: web-dev;
+  }
+
+  .web-design {
+    grid-area: web-des;
+  }
+
+  /* Contact Section ------------------------- */
+
+  .contact-section {
+    padding: 0 0 3rem;
+  }
+
+  .contact-section label {
+    font-size: 2.5rem;
+    margin: 2.5rem 0 1.5rem;
+  }
+
+  .contact-section input {
+    font-size: 2.5rem;
+    width: 60%;
+  }
+
+  textarea {
+    font-size: 3rem;
+    width: 60%;
+  }
+
+  .contact-section button {
+    font-size: 2.5rem;
+  }
+
+  /* Footer Section ------------------------------*/
+
+  .footer-section .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-section h3 {
+    margin: 2rem 12rem 2rem 0;
+  }
+}
+
+/* Second big media change ---------------------------------------- */
+
+@media screen and (min-width: 1080px) {
+  .container {
+    width: 80%;
+  }
+
+  .watermark {
+    font-size: 9rem;
+    letter-spacing: 3rem;
+  }
+
+  /* Hero Section ------------------------- */
+
+  .hero-section .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .wm1 {
+    font-size: 11rem;
+    top: 3.5rem;
+  }
+
+  .hero-content {
+    margin: auto 0;
+    animation: hero-opening 3s ease-in-out;
+  }
+
+  .hero-image-part {
+    margin: auto 0;
+  }
+
+  .hero-image {
+    animation: hero-opening 2s ease-in-out;
+  }
+
+  /* Projects Section ------------------------- */
+
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+
+  /* Skills Section ------------------------- */
+
+  .skills-parts {
+    display: grid;
+    grid-template-areas:
+      "uni-skills web-dev"
+      "uni-skills web-des";
+  }
+
+  .university-studies {
+    padding-right: 7rem;
+  }
+
+  .web-development h1,
+  .web-design h1 {
+    margin-top: 1rem;
+  }
+
+  /* Contact Section ------------------------- */
+
+  .contact-section input,
+  textarea {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container,
+  .main-head {
+    max-width: 1930px;
+  }
+}
